@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@1.1.61
+3 info using node@v0.8.9
+4 verbose read json /Users/smithclay/Dropbox/Work/sayeasy/package.json
+5 verbose run-script [ 'prestart', 'start', 'poststart' ]
+6 info prestart sayeasy@0.1.0
+7 info start sayeasy@0.1.0
+8 verbose unsafe-perm in lifecycle true
+9 silly exec sh "-c" "node server"
+10 silly sh,-c,node server,/Users/smithclay/Dropbox/Work/sayeasy spawning
+11 info sayeasy@0.1.0 Failed to exec start script
+12 error sayeasy@0.1.0 start: `node server`
+12 error `sh "-c" "node server"` failed with 1
+13 error Failed at the sayeasy@0.1.0 start script.
+13 error This is most likely a problem with the sayeasy package,
+13 error not with npm itself.
+13 error Tell the author that this fails on your system:
+13 error     node server
+13 error You can get their info via:
+13 error     npm owner ls sayeasy
+13 error There is likely additional logging output above.
+14 error System Darwin 12.1.0
+15 error command "node" "/usr/local/bin/npm" "start"
+16 error cwd /Users/smithclay/Dropbox/Work/sayeasy
+17 error node -v v0.8.9
+18 error npm -v 1.1.61
+19 error code ELIFECYCLE
+20 verbose exit [ 1, true ]
