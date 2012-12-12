@@ -24,6 +24,12 @@ sayeasy.start();
 sh $ curl -X POST -dtext='Hello World' -dvoice=Bruce http://localhost:4000/speak
 ```
 
+### `/levels`
+
+`/levels` is a HTTP `POST` endpoint that sets the system volume.
+
+* volume - A number [0-10] that sets the system volume. 0 is mute and 10 is the highest. 
+
 ### `/sounds`
 
 `/sounds` is an endpoint that accepts an HTTP `GET` request to return a JSON array of *.mp3 files sayeasy can play. The directory sayeasy uses to look for *.mp3 files is configured in the `SOUND_DIRECTORY` environment variable (default: `/usr/local/BuildSounds`).
