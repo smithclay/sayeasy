@@ -1,7 +1,7 @@
 {
   "name": "sayeasy",
   "description": "RESTful wrapper around say.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/smithclay/sayeasy",
   "author": {
     "name": "Clay Smith",
@@ -20,6 +20,7 @@
       "url": "https://github.com/smithclay/sayeasy/blob/master/LICENSE-MIT"
     }
   ],
+  "bin": "bin/cli.js",
   "main": "lib/sayeasy",
   "engines": {
     "node": ">= 0.6.0"
