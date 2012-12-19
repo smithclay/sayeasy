@@ -28,7 +28,7 @@ Want to run the sayeasy command on a different server/port than `localhost:4000`
  sh $ export SAYEASY_PORT=3003
 ```
 
-## Examples
+## Server Endpoints
 
 ### `/speak`
 
@@ -37,10 +37,6 @@ Want to run the sayeasy command on a different server/port than `localhost:4000`
 * voice - The Mac OS X voice to speak the text. (optional, default: 'Bruce')
 * text - The text to speak. (required)
 * sound - The name of an *.mp3 file in `process.env.SOUND_DIRECTORY` to play.
-
-```sh
-sh $ curl -dtext='Hello World' -dvoice=Bruce http://localhost:4000/speak
-```
 
 ### `/levels`
 
@@ -56,7 +52,14 @@ sh $ curl -dtext='Hello World' -dvoice=Bruce http://localhost:4000/speak
 
 Stop all `afplay` processes on the system.
 
+## cURL Example
+
+```sh
+sh $ curl -dtext='Hello World' -dvoice=Bruce http://localhost:4000/speak
+```
+
 ## Release History
+0.1.1 - Include CLI Tool
 0.1.0 - Initial Release
 
 ## License
