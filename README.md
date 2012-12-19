@@ -60,7 +60,7 @@ sh $ curl -dtext='Hello World' -dvoice=Bruce http://localhost:4000/speak
 
 ## Release History
 
-0.1.1 - Include CLI Tool
+0.1.2 - Include CLI Tool
 
 0.1.0 - Initial Release
 

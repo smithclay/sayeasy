@@ -22,8 +22,8 @@ console.log('Speaking: %s', text);
 
 // An object of options to indicate where to post to
 var options = {
-  host: 'localhost' || process.env.SAYEASY_HOST,
-  port: 4000 || process.env.SAYEASY_PORT,
+  host: process.env.SAYEASY_HOST || 'localhost',
+  port: process.env.SAYEASY_PORT || 4000,
   path: '/speak',
   method: 'POST',
   headers: {
