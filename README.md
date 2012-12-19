@@ -9,6 +9,24 @@ Install the module with: `npm install sayeasy`
 var sayeasy = require('sayeasy');
 sayeasy.start();
 ```
+## Command Line Interface (CLI)
+
+sayeasy comes with a easy-to-use CLI tool that sends text to a sayeasy server.
+
+If you run `npm install -g sayeasy` the sayeasy CLI will be available in your `PATH`:
+
+To speak "Hello World!" using the Cellos voice on `localhost:4000`:
+
+```sh
+  sh $ sayeasy Hello World! -v Cellos
+```
+
+Want to run the sayeasy command on a different server/port than `localhost:4000`, set these environment variables:
+
+```sh
+ sh $ export SAYEASY_SERVER=10.10.10.10
+ sh $ export SAYEASY_PORT=3003
+```
 
 ## Examples
 
@@ -21,7 +39,7 @@ sayeasy.start();
 * sound - The name of an *.mp3 file in `process.env.SOUND_DIRECTORY` to play.
 
 ```sh
-sh $ curl -X POST -dtext='Hello World' -dvoice=Bruce http://localhost:4000/speak
+sh $ curl -dtext='Hello World' -dvoice=Bruce http://localhost:4000/speak
 ```
 
 ### `/levels`
