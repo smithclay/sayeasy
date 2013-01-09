@@ -1,6 +1,6 @@
 # sayeasy
 
-RESTful wrapper around say.js. Runs on Mac OS X.
+RESTful wrapper around say.js. Runs on Mac OS X. Useful for text-to-speech notifications in a continuous integration environment. 
 
 ## Getting Started
 Install the module with: `npm install sayeasy`
